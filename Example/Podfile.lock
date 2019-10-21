@@ -1,0 +1,16 @@
+PODS:
+  - LouxunYun (0.1.0)
+
+DEPENDENCIES:
+  - LouxunYun (from `../`)
+
+EXTERNAL SOURCES:
+  LouxunYun:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LouxunYun: eff23b0b87f021cc6e2aedbbe29c0134dc310ba8
+
+PODFILE CHECKSUM: 4caedb6883fcf5c913e3b7c48b9fad7ddb5102f9
+
+COCOAPODS: 1.6.1

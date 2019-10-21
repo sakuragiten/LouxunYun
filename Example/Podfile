@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LouxunYun_Example' do
+  pod 'LouxunYun', :path => '../'
+
+  target 'LouxunYun_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
