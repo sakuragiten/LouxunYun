@@ -10,9 +10,3 @@
 #endif
 #endif
 
-#import "LouxunYun.h"
-#import "LXToast.h"
-
-FOUNDATION_EXPORT double LouxunYunVersionNumber;
-FOUNDATION_EXPORT const unsigned char LouxunYunVersionString[];
-

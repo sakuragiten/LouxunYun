@@ -1,5 +1,5 @@
 //
-//  LXViewController.h
+//  AppDelegate.h
 //  LouxunYun
 //
 //  Created by 387970107@qq.com on 10/21/2019.
@@ -8,6 +8,8 @@
 
 @import UIKit;
 
-@interface LXViewController : UIViewController
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 @end

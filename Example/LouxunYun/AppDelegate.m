@@ -1,18 +1,29 @@
 //
-//  LXAppDelegate.m
+//  AppDelegate.m
 //  LouxunYun
 //
 //  Created by 387970107@qq.com on 10/21/2019.
 //  Copyright (c) 2019 387970107@qq.com. All rights reserved.
 //
 
-#import "LXAppDelegate.h"
+#import "AppDelegate.h"
+#import "TestMainViewController.h"
 
-@implementation LXAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    TestMainViewController *vc = [[TestMainViewController alloc] init];
+    vc.title = @"Test";
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

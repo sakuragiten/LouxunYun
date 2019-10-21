@@ -1,9 +1,9 @@
 {
   "name": "LouxunYun",
   "version": "0.1.0",
-  "summary": "A short description of LouxunYun.",
+  "summary": "basic component for louxun project.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/387970107@qq.com/LouxunYun",
+  "homepage": "https://github.com/SakuragiTen/LouxunYun.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,17 @@
     "387970107@qq.com": "387970107@qq.com"
   },
   "source": {
-    "git": "https://github.com/387970107@qq.com/LouxunYun.git",
+    "git": "https://github.com/SakuragiTen/LouxunYun.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "LouxunYun/Classes/**/*"
+  "source_files": "LouxunYun/Classes/**/*",
+  "dependencies": {
+    "MBProgressHUD": [
+
+    ]
+  },
+  "prefix_header_contents": ""
 }

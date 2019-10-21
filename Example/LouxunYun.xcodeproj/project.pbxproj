@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		189B3216764D58E250ACBD98 /* Pods_LouxunYun_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFF03534864B66D8485A7F95 /* Pods_LouxunYun_Example.framework */; };
 		39D2FFAA68C6E666A0DFAE9C /* Pods_LouxunYun_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 428D76C93CAC6907E9410B3A /* Pods_LouxunYun_Tests.framework */; };
+		4B13D1DA235D829700DE8638 /* ma.png in Resources */ = {isa = PBXBuildFile; fileRef = 4B13D1CB235D829700DE8638 /* ma.png */; };
+		4B13D1DB235D829700DE8638 /* TestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B13D1CF235D829700DE8638 /* TestViewModel.m */; };
+		4B13D1DC235D829700DE8638 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B13D1D2235D829700DE8638 /* TestModel.m */; };
+		4B13D1DD235D829700DE8638 /* TestMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B13D1D5235D829700DE8638 /* TestMainViewController.m */; };
+		4B13D1E1235D84F800DE8638 /* LXToastController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B13D1E0235D84F800DE8638 /* LXToastController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* LXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LXAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* LXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LXViewController.m */; };
+		6003F59E195388D20070C39A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* AppDelegate.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -23,7 +27,6 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +41,18 @@
 
 /* Begin PBXFileReference section */
 		0862A96A6E8612367FD2DBC2 /* Pods-LouxunYun_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LouxunYun_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LouxunYun_Tests/Pods-LouxunYun_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		13ECC109F6FC0F60B0F56233 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		13ECC109F6FC0F60B0F56233 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		428D76C93CAC6907E9410B3A /* Pods_LouxunYun_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LouxunYun_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4421A4361DF0B36DB4790BD5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4421A4361DF0B36DB4790BD5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4B13D1CB235D829700DE8638 /* ma.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ma.png; sourceTree = "<group>"; };
+		4B13D1CE235D829700DE8638 /* TestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewModel.h; sourceTree = "<group>"; };
+		4B13D1CF235D829700DE8638 /* TestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewModel.m; sourceTree = "<group>"; };
+		4B13D1D1235D829700DE8638 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		4B13D1D2235D829700DE8638 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		4B13D1D4235D829700DE8638 /* TestMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMainViewController.h; sourceTree = "<group>"; };
+		4B13D1D5235D829700DE8638 /* TestMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMainViewController.m; sourceTree = "<group>"; };
+		4B13D1DF235D84F800DE8638 /* LXToastController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXToastController.h; sourceTree = "<group>"; };
+		4B13D1E0235D84F800DE8638 /* LXToastController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXToastController.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LouxunYun_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LouxunYun_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,10 +61,8 @@
 		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6003F59B195388D20070C39A /* LouxunYun-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LouxunYun-Prefix.pch"; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* LXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* LXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* LXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* LXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXViewController.m; sourceTree = "<group>"; };
+		6003F59C195388D20070C39A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6003F59D195388D20070C39A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* LouxunYun_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LouxunYun_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -61,11 +71,10 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6A5FB478742AD2DE8C280FE /* Pods-LouxunYun_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LouxunYun_Example.release.xcconfig"; path = "Target Support Files/Pods-LouxunYun_Example/Pods-LouxunYun_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EACA97443914401579F98BFC /* Pods-LouxunYun_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LouxunYun_Tests.release.xcconfig"; path = "Target Support Files/Pods-LouxunYun_Tests/Pods-LouxunYun_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EFF03534864B66D8485A7F95 /* Pods_LouxunYun_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LouxunYun_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F91FBC37C3B24B05F05B22E9 /* LouxunYun.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LouxunYun.podspec; path = ../LouxunYun.podspec; sourceTree = "<group>"; };
+		F91FBC37C3B24B05F05B22E9 /* LouxunYun.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LouxunYun.podspec; path = ../LouxunYun.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FE6A877F528212C8A13DAEB7 /* Pods-LouxunYun_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LouxunYun_Example.debug.xcconfig"; path = "Target Support Files/Pods-LouxunYun_Example/Pods-LouxunYun_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +104,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B13D1BD235D829700DE8638 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4B13D1BE235D829700DE8638 /* Test */,
+				4B13D1C9235D829700DE8638 /* Sources */,
+				4B13D1CC235D829700DE8638 /* Main */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4B13D1BE235D829700DE8638 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				4B13D1DE235D84E300DE8638 /* Toast */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		4B13D1C9235D829700DE8638 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4B13D1CA235D829700DE8638 /* Image */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		4B13D1CA235D829700DE8638 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				4B13D1CB235D829700DE8638 /* ma.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		4B13D1CC235D829700DE8638 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4B13D1CD235D829700DE8638 /* ViewModel */,
+				4B13D1D0235D829700DE8638 /* Models */,
+				4B13D1D3235D829700DE8638 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4B13D1CD235D829700DE8638 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4B13D1CE235D829700DE8638 /* TestViewModel.h */,
+				4B13D1CF235D829700DE8638 /* TestViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		4B13D1D0235D829700DE8638 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4B13D1D1235D829700DE8638 /* TestModel.h */,
+				4B13D1D2235D829700DE8638 /* TestModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4B13D1D3235D829700DE8638 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4B13D1D4235D829700DE8638 /* TestMainViewController.h */,
+				4B13D1D5235D829700DE8638 /* TestMainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4B13D1DE235D84E300DE8638 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				4B13D1DF235D84F800DE8638 /* LXToastController.h */,
+				4B13D1E0235D84F800DE8638 /* LXToastController.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -132,11 +221,9 @@
 		6003F593195388D20070C39A /* Example for LouxunYun */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* LXAppDelegate.h */,
-				6003F59D195388D20070C39A /* LXAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* LXViewController.h */,
-				6003F5A6195388D20070C39A /* LXViewController.m */,
+				4B13D1BD235D829700DE8638 /* Classes */,
+				6003F59C195388D20070C39A /* AppDelegate.h */,
+				6003F59D195388D20070C39A /* AppDelegate.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -193,7 +280,6 @@
 				0862A96A6E8612367FD2DBC2 /* Pods-LouxunYun_Tests.debug.xcconfig */,
 				EACA97443914401579F98BFC /* Pods-LouxunYun_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +344,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -277,7 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				4B13D1DA235D829700DE8638 /* ma.png in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -305,12 +392,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LouxunYun_Example/Pods-LouxunYun_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LouxunYun/LouxunYun.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LouxunYun.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -368,9 +457,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F59E195388D20070C39A /* LXAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* LXViewController.m in Sources */,
+				4B13D1DB235D829700DE8638 /* TestViewModel.m in Sources */,
+				4B13D1E1235D84F800DE8638 /* LXToastController.m in Sources */,
+				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				4B13D1DD235D829700DE8638 /* TestMainViewController.m in Sources */,
+				4B13D1DC235D829700DE8638 /* TestModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +593,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LouxunYun/LouxunYun-Prefix.pch";
 				INFOPLIST_FILE = "LouxunYun/LouxunYun-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -517,6 +610,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LouxunYun/LouxunYun-Prefix.pch";
 				INFOPLIST_FILE = "LouxunYun/LouxunYun-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

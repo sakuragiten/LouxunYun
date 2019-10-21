@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'LouxunYun'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of LouxunYun.'
+  s.summary          = 'basic component for louxun project.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/387970107@qq.com/LouxunYun'
+  s.homepage         = 'https://github.com/SakuragiTen/LouxunYun.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '387970107@qq.com' => '387970107@qq.com' }
-  s.source           = { :git => 'https://github.com/387970107@qq.com/LouxunYun.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/SakuragiTen/LouxunYun.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
@@ -38,5 +38,9 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'MBProgressHUD'
+  
+  s.prefix_header_contents = <<-EOS
+  EOS
+  
 end

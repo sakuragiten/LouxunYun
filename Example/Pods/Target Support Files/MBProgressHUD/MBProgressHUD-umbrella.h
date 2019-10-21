@@ -10,9 +10,8 @@
 #endif
 #endif
 
-#import "LouxunYun.h"
-#import "LXToast.h"
+#import "MBProgressHUD.h"
 
-FOUNDATION_EXPORT double LouxunYunVersionNumber;
-FOUNDATION_EXPORT const unsigned char LouxunYunVersionString[];
+FOUNDATION_EXPORT double MBProgressHUDVersionNumber;
+FOUNDATION_EXPORT const unsigned char MBProgressHUDVersionString[];
 
