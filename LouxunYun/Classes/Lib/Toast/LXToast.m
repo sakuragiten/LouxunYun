@@ -68,7 +68,7 @@
  completionHandle:(dispatch_block_t)completionHandle
 {
     if (view == nil) {
-        view = [UIApplication sharedApplication].windows.lastObject;
+        view = [UIApplication sharedApplication].keyWindow;
     }
     [self dismissInView:view];
     
@@ -93,7 +93,7 @@
 + (void)dismissInView:(UIView *)view
 {
     if (view == nil) {
-        view = [UIApplication sharedApplication].windows.lastObject;
+        view = [UIApplication sharedApplication].keyWindow;
     }
     [MBProgressHUD hideHUDForView:view animated:YES];
 }
