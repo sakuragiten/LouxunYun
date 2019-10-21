@@ -78,6 +78,8 @@
     hud.animationType = MBProgressHUDAnimationFade; //渐变显示
     hud.removeFromSuperViewOnHide = YES;            // 隐藏的时候从父视图移除
     hud.label.text = text;
+    hud.label.numberOfLines = 3;
+    hud.label.minimumScaleFactor = 0.7;
     hud.completionBlock = completionHandle;
     [hud hideAnimated:YES afterDelay:timeInterval];
 }

@@ -41,7 +41,7 @@
         [LXToast showToast:@"123"];
         [LXToast showToast:@"123"];
         [LXToast showToast:@"123"];
-        [LXToast showToast:@"123dfsdsddfsdfds"];
+        [LXToast showToast:@"123dfsdsddfsdfdsasdasudgajjdahjdhjasjdahdahjdhjahjdhjajshdajhsdjhajhdsjhadjhajhsdhjajsdjajhdajhsdhashjda"];
     });
 }
 
