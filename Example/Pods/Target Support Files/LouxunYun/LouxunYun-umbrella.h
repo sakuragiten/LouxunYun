@@ -10,7 +10,10 @@
 #endif
 #endif
 
+#import "YunConfiguration.h"
 #import "LouxunYun.h"
+#import "LXMacro.h"
+#import "LXCacheManager.h"
 #import "LXToast.h"
 
 FOUNDATION_EXPORT double LouxunYunVersionNumber;

@@ -12,6 +12,6 @@
 
 
 #import "LXToast.h"
-
+#import "LXCacheManager.h"
 
 #endif /* LouxunYun_h */
