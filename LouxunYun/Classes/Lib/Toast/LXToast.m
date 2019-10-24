@@ -29,7 +29,7 @@
 + (void)showLoadingWithText:(NSString *)text timeInterval:(NSInteger)timeInterval inView:(UIView *)view
 {
     if (view == nil) {
-        view = [UIApplication sharedApplication].windows.lastObject;
+        view = [UIApplication sharedApplication].keyWindow;
     }
     [self dismissInView:view];
     
