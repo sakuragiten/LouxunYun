@@ -30,6 +30,8 @@ static LXCacheManager *_manager = nil;
 //路径后缀 用来隔离用户 以及 环境
 - (NSString *)pathSuffix
 {
+    if (self.separateKey.length == 0) return @"default";
+    
     NSString *environment = [NSString stringWithFormat:@"%ld", self.environment];
     
     return [NSString stringWithFormat:@"%@/%@", environment, self.separateKey];
