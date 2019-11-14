@@ -14,6 +14,9 @@
 		4B13D1DC235D829700DE8638 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B13D1D2235D829700DE8638 /* TestModel.m */; };
 		4B13D1DD235D829700DE8638 /* TestMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B13D1D5235D829700DE8638 /* TestMainViewController.m */; };
 		4B13D1E1235D84F800DE8638 /* LXToastController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B13D1E0235D84F800DE8638 /* LXToastController.m */; };
+		4B155378237C2E5D00767A6C /* LXContactAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B155376237C2E5D00767A6C /* LXContactAlertController.xib */; };
+		4B155379237C2E5D00767A6C /* LXContactAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B155377237C2E5D00767A6C /* LXContactAlertController.m */; };
+		4B15537D237C2F2800767A6C /* louxun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B15537C237C2F2800767A6C /* louxun.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -53,6 +56,10 @@
 		4B13D1D5235D829700DE8638 /* TestMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMainViewController.m; sourceTree = "<group>"; };
 		4B13D1DF235D84F800DE8638 /* LXToastController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LXToastController.h; sourceTree = "<group>"; };
 		4B13D1E0235D84F800DE8638 /* LXToastController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXToastController.m; sourceTree = "<group>"; };
+		4B155375237C2E5D00767A6C /* LXContactAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXContactAlertController.h; sourceTree = "<group>"; };
+		4B155376237C2E5D00767A6C /* LXContactAlertController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LXContactAlertController.xib; sourceTree = "<group>"; };
+		4B155377237C2E5D00767A6C /* LXContactAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXContactAlertController.m; sourceTree = "<group>"; };
+		4B15537C237C2F2800767A6C /* louxun.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = louxun.framework; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LouxunYun_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LouxunYun_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -87,6 +94,7 @@
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				189B3216764D58E250ACBD98 /* Pods_LouxunYun_Example.framework in Frameworks */,
+				4B15537D237C2F2800767A6C /* louxun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +115,7 @@
 		4B13D1BD235D829700DE8638 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				4B15537A237C2F1900767A6C /* lib */,
 				4B13D1BE235D829700DE8638 /* Test */,
 				4B13D1C9235D829700DE8638 /* Sources */,
 				4B13D1CC235D829700DE8638 /* Main */,
@@ -117,6 +126,7 @@
 		4B13D1BE235D829700DE8638 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				4B155374237C2E5D00767A6C /* Alert */,
 				4B13D1DE235D84E300DE8638 /* Toast */,
 			);
 			path = Test;
@@ -182,6 +192,32 @@
 				4B13D1E0235D84F800DE8638 /* LXToastController.m */,
 			);
 			path = Toast;
+			sourceTree = "<group>";
+		};
+		4B155374237C2E5D00767A6C /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				4B155375237C2E5D00767A6C /* LXContactAlertController.h */,
+				4B155377237C2E5D00767A6C /* LXContactAlertController.m */,
+				4B155376237C2E5D00767A6C /* LXContactAlertController.xib */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		4B15537A237C2F1900767A6C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4B15537B237C2F2800767A6C /* Louxun */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		4B15537B237C2F2800767A6C /* Louxun */ = {
+			isa = PBXGroup;
+			children = (
+				4B15537C237C2F2800767A6C /* louxun.framework */,
+			);
+			path = Louxun;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
@@ -334,6 +370,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "387970107@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = F4Z23R5KH3;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -365,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B13D1DA235D829700DE8638 /* ma.png in Resources */,
+				4B155378237C2E5D00767A6C /* LXContactAlertController.xib in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -391,11 +431,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-LouxunYun_Example/Pods-LouxunYun_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/LouxunYun/LouxunYun.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LouxunYun.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QMUIKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -459,6 +501,7 @@
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				4B13D1DD235D829700DE8638 /* TestMainViewController.m in Sources */,
 				4B13D1DC235D829700DE8638 /* TestModel.m in Sources */,
+				4B155379237C2E5D00767A6C /* LXContactAlertController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +629,11 @@
 			baseConfigurationReference = FE6A877F528212C8A13DAEB7 /* Pods-LouxunYun_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F4Z23R5KH3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LouxunYun/Classes/lib/Louxun",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LouxunYun/LouxunYun-Prefix.pch";
 				INFOPLIST_FILE = "LouxunYun/LouxunYun-Info.plist";
@@ -603,6 +651,11 @@
 			baseConfigurationReference = A6A5FB478742AD2DE8C280FE /* Pods-LouxunYun_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F4Z23R5KH3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LouxunYun/Classes/lib/Louxun",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LouxunYun/LouxunYun-Prefix.pch";
 				INFOPLIST_FILE = "LouxunYun/LouxunYun-Info.plist";

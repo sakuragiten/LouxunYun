@@ -32,15 +32,24 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'LouxunYun/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'LouxunYun' => ['LouxunYun/Assets/*.png']
-  # }
+  s.resource_bundles = {
+     'LouxunYun' => ['LouxunYun/Assets/*.png']
+  }
+  
+  s.resources = ['LouxunYun/Assets/**/*.{xcassets}']
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'MBProgressHUD'
-  
+  #s.dependency 'QMUIKit'
+  s.dependency 'QMUIKit/QMUIComponents/QMUIToastView'
+  s.dependency 'QMUIKit/QMUIComponents/QMUIModalPresentationViewController'
+  #s.dependency 'QMUIKit/QMUIComponents/QMUIImagePickerLibrary'
   s.prefix_header_contents = <<-EOS
+  #import "YunMacro.h"
+  #import "YunHeader.h"
   EOS
   
 end
+
+

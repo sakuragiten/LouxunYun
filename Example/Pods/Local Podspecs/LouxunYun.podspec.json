@@ -1,6 +1,6 @@
 {
   "name": "LouxunYun",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "basic component for louxun project.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/SakuragiTen/LouxunYun.git",
@@ -13,16 +13,30 @@
   },
   "source": {
     "git": "https://github.com/SakuragiTen/LouxunYun.git",
-    "tag": "0.1.0"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"
   },
   "source_files": "LouxunYun/Classes/**/*",
+  "resource_bundles": {
+    "LouxunYun": [
+      "LouxunYun/Assets/*.png"
+    ]
+  },
+  "resources": [
+    "LouxunYun/Assets/**/*.{xcassets}"
+  ],
   "dependencies": {
     "MBProgressHUD": [
 
+    ],
+    "QMUIKit/QMUIComponents/QMUIToastView": [
+
+    ],
+    "QMUIKit/QMUIComponents/QMUIModalPresentationViewController": [
+
     ]
   },
-  "prefix_header_contents": ""
+  "prefix_header_contents": "#import \"YunMacro.h\"\n#import \"YunHeader.h\""
 }

@@ -1,0 +1,6 @@
+framework module louxun {
+  umbrella header "louxun.h"
+
+  export *
+  module * { export * }
+}
