@@ -44,7 +44,7 @@ TODO: Add long description of the pod here.
   #s.dependency 'QMUIKit'
   s.dependency 'QMUIKit/QMUIComponents/QMUIToastView'
   s.dependency 'QMUIKit/QMUIComponents/QMUIModalPresentationViewController'
-  #s.dependency 'QMUIKit/QMUIComponents/QMUIImagePickerLibrary'
+  s.dependency 'QMUIKit/QMUIComponents/QMUIImagePickerLibrary'
   s.prefix_header_contents = <<-EOS
   #import "YunMacro.h"
   #import "YunHeader.h"

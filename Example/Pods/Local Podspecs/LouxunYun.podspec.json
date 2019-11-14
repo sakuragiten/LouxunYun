@@ -36,6 +36,9 @@
     ],
     "QMUIKit/QMUIComponents/QMUIModalPresentationViewController": [
 
+    ],
+    "QMUIKit/QMUIComponents/QMUIImagePickerLibrary": [
+
     ]
   },
   "prefix_header_contents": "#import \"YunMacro.h\"\n#import \"YunHeader.h\""
