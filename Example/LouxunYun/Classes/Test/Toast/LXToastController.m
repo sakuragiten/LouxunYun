@@ -30,9 +30,20 @@
 {
     self.view.backgroundColor = [UIColor whiteColor];
     [self addTestBtn];
+    
+    QMUINavigationButton *button = [[QMUINavigationButton alloc] initWithType:QMUINavigationButtonTypeBack title:@""];
+//    QMUINavigationButton *button = [[QMUINavigationButton alloc] initWithImage:[[UIImage imageNamed:@"nav_back_arrow"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+    [button addTarget:self action:@selector(backAction) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *barButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    
+//    UIBarButtonItem *item = [UIBarButtonItem qmui_backItemWithTarget:self action:@selector(handleBackButtonEvent:)];// 自定义返回按钮要自己写代码去 pop 界面
+    self.navigationItem.leftBarButtonItem = barButtonItem;
 }
 
-
+- (void)backAction
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 - (void)addTestBtn
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -49,9 +60,14 @@
 {
 //    [LXToast showToast:@"sadasda"];
 //    [LXToast showError:@"错了哦" detailText:@"你到底那里错了"];
-    LXContactAlertController *vc = [LXContactAlertController contactAlertController];
-    [vc showAniamted];
+//    LXContactAlertController *vc = [LXContactAlertController contactAlertController];
+//    [vc showAniamted];
+    
+    UIViewController *vc = [UIViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
+
 
 - (void)test
 {

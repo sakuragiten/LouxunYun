@@ -37,13 +37,16 @@
 
 
 
-
+/// 成功提示
 + (void)showSucceed:(nullable NSString *)text;
 + (void)showSucceed:(nullable NSString *)text detailText:(nullable NSString *)detailText;
 
+/// 错误提示
 + (void)showError:(nullable NSString *)text;
 + (void)showError:(nullable NSString *)text detailText:(nullable NSString *)detailText;
 
+
+/// 信息展示
 + (void)showInfo:(nullable NSString *)text;
 + (void)showInfo:(nullable NSString *)text detailText:(nullable NSString *)detailText;
 

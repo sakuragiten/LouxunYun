@@ -38,6 +38,10 @@
 //    }];
     self.tableView.frame = self.view.bounds;
 
+    
+    
+//    self.forceEnableBackGesture = YES;// 当系统的返回按钮被屏蔽的时候，系统的手势返回也会跟着失效，所以这里要手动强制打开手势返回
+    
 }
 
 

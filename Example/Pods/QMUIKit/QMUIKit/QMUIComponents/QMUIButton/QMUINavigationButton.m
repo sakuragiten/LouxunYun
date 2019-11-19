@@ -104,11 +104,12 @@ typedef NS_ENUM(NSInteger, QMUINavigationButtonPosition) {
             UIImage *backIndicatorImage = [UINavigationBar appearance].backIndicatorImage;
             if (!backIndicatorImage) {
                 // 配置表没有自定义的图片，则按照系统的返回按钮图片样式创建一张，颜色按照 tintColor 来
-                UIColor *tintColor = QMUICMIActivated ? NavBarTintColor : ({
-                    UIView *view = [[UIView alloc] init];
-                    view.tintColor;
-                });
-                backIndicatorImage = [UIImage qmui_imageWithShape:QMUIImageShapeNavBack size:CGSizeMake(13, 23) lineWidth:3 tintColor:tintColor];
+//                UIColor *tintColor = QMUICMIActivated ? NavBarTintColor : ({
+//                    UIView *view = [[UIView alloc] init];
+//                    view.tintColor;
+//                });
+//                backIndicatorImage = [UIImage qmui_imageWithShape:QMUIImageShapeNavBack size:CGSizeMake(13, 23) lineWidth:3 tintColor:tintColor];
+                backIndicatorImage = [[UIImage imageNamed:@"nav_back_arrow"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
             }
             [self setImage:backIndicatorImage forState:UIControlStateNormal];
             [self setImage:[backIndicatorImage qmui_imageWithAlpha:NavBarHighlightedAlpha] forState:UIControlStateHighlighted];
@@ -617,7 +618,7 @@ static char kAssociatedObjectKey_tempRightBarButtonItems;
                     NSDirectionalEdgeInsets value = contentView.directionalLayoutMargins;
                     value.leading = value.trailing - (selfObject.qmui_customizingBackBarButtonItem ? 8 : 0);
                     if (@available(iOS 13, *)) {
-                        contentView.frame = CGRectMake(-value.leading, -value.top, value.leading + value.trailing + contentView.frame.size.width, value.top + value.bottom + contentView.frame.size.height);
+//                        contentView.frame = CGRectMake(-value.leading, -value.top, value.leading + value.trailing + contentView.frame.size.width, value.top + value.bottom + contentView.frame.size.height);
                     } else {
                         contentView.directionalLayoutMargins = value;
                     }
