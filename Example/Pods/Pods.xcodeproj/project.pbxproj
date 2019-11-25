@@ -72,6 +72,8 @@
 		4920DD85B31055F1EDDEC03A5767655D /* QMUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5037626B53AB8206D4D8DD9CF0F678 /* QMUIKit-dummy.m */; };
 		4A6556E715D877F758B938DD78E93435 /* CALayer+QMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B781E4CF9ADC6ED5C95EF5877017882 /* CALayer+QMUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B0076D727774893E12326F18DEAB1DB /* UIActivityIndicatorView+QMUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 518D8B2F24735B61554B31A85C7649E7 /* UIActivityIndicatorView+QMUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B8D4B1A238BA8B200079868 /* YDUnicode.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8D4B18238BA8B200079868 /* YDUnicode.h */; };
+		4B8D4B1B238BA8B200079868 /* YDUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8D4B19238BA8B200079868 /* YDUnicode.m */; };
 		4BBF553F445B49165E5FC04D3D5888E3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D6CAFA3DCF36D25E2529E7A8BA980E /* UIKit.framework */; };
 		4C6BC87A9555788F0CFE4EF40EF05FCD /* QMUIResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B3BF11F4E0FABDCC8A2A01353C8AC832 /* QMUIResources.bundle */; };
 		4CB85E35F28782D60FFEB8AFFF184946 /* QMUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CE71E905577198695384AF5DFB15CA6C /* QMUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -338,6 +340,8 @@
 		498C08BF8B660DEABEC387E55BDE6739 /* LXCacheManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LXCacheManager.h; sourceTree = "<group>"; };
 		4B3E7C5AE2BB29EDD0B4E1A34F6DBACD /* UIColor+QMUI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+QMUI.m"; path = "QMUIKit/UIKitExtensions/UIColor+QMUI.m"; sourceTree = "<group>"; };
 		4B7D67BB8ADD2B13C5F47BE257115CF5 /* NSObject+QMUIMultipleDelegates.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+QMUIMultipleDelegates.h"; path = "QMUIKit/QMUIComponents/QMUIMultipleDelegates/NSObject+QMUIMultipleDelegates.h"; sourceTree = "<group>"; };
+		4B8D4B18238BA8B200079868 /* YDUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDUnicode.h; sourceTree = "<group>"; };
+		4B8D4B19238BA8B200079868 /* YDUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDUnicode.m; sourceTree = "<group>"; };
 		4C0A14EF43A4073ABF032076A1F48702 /* NSAttributedString+QMUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSAttributedString+QMUI.h"; path = "QMUIKit/UIKitExtensions/NSAttributedString+QMUI.h"; sourceTree = "<group>"; };
 		4D08ED97E81CF7BCF7F4EEABE71E2463 /* QMUIImagePreviewView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QMUIImagePreviewView.h; path = QMUIKit/QMUIComponents/QMUIImagePreviewView/QMUIImagePreviewView.h; sourceTree = "<group>"; };
 		4DA6AFE2CC1C549E03BF3E48D1687B12 /* UIImage+QMUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+QMUI.h"; path = "QMUIKit/UIKitExtensions/UIImage+QMUI.h"; sourceTree = "<group>"; };
@@ -733,6 +737,15 @@
 			name = QMUIKeyboardManager;
 			sourceTree = "<group>";
 		};
+		4B8D4B17238BA8B200079868 /* Unicode */ = {
+			isa = PBXGroup;
+			children = (
+				4B8D4B18238BA8B200079868 /* YDUnicode.h */,
+				4B8D4B19238BA8B200079868 /* YDUnicode.m */,
+			);
+			path = Unicode;
+			sourceTree = "<group>";
+		};
 		5A4E1C54DD5D403D27E61769AFB05BFA /* QMUIWeakObjectContainer */ = {
 			isa = PBXGroup;
 			children = (
@@ -986,6 +999,7 @@
 		9C0610052E3053BB8AA415915FA8ECDF /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				4B8D4B17238BA8B200079868 /* Unicode */,
 				6AE452EC40C3A4A3863FAF6A1D3F934B /* Cache */,
 				E613D89C3DCFA58717520FE1965FFFEF /* Toast */,
 			);
@@ -1345,6 +1359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				911BE175C34F5D81E02034F4F9800FC3 /* LouxunYun-umbrella.h in Headers */,
+				4B8D4B1A238BA8B200079868 /* YDUnicode.h in Headers */,
 				8CBDB2D8F707A36C40463E30B930BB58 /* LouxunYun.h in Headers */,
 				3F85F33066C3109E702E05327F8708AF /* LXCacheManager.h in Headers */,
 				B991BB3CA08177A3931C8C5D141C7D07 /* LXMacro.h in Headers */,
@@ -1664,6 +1679,7 @@
 			files = (
 				79AF787374F4F789CBCE6A2849B36449 /* LouxunYun-dummy.m in Sources */,
 				30316B9CED919A02B2875E0012AEDDE1 /* LXCacheManager.m in Sources */,
+				4B8D4B1B238BA8B200079868 /* YDUnicode.m in Sources */,
 				F6DF31F6BA97F9670D8F6783EE9421AA /* LXToast.m in Sources */,
 				6AC99585CD0C282F06274C71107C47B6 /* LXUITips.m in Sources */,
 				14455574A918A11D64FCDEBB309BA1B1 /* UIImage+yun.m in Sources */,
