@@ -134,7 +134,7 @@ static LXCacheManager *_manager = nil;
 
 - (NSDictionary *)getCacheDataDictForKey:(NSString *)key separate:(BOOL)separate
 {
-    NSData *data = [self getCacheDataForKey:key];
+    NSData *data = [self getCacheDataForKey:key separate:separate];
     if (!data) return nil;
     NSDictionary *dataDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
     
