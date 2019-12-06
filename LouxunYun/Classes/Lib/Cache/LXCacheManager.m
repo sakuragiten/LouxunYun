@@ -10,7 +10,9 @@
 #import <CommonCrypto/CommonDigest.h>
 
 #define kDocPath NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject
-#define kCachePath [NSString stringWithFormat:@"%@/%@/CacheData", kDocPath, [[LXCacheManager sharedManager] pathSuffix]]
+#define userCachePath [NSString stringWithFormat:@"%@/%@/CacheData", kDocPath, [[LXCacheManager sharedManager] pathSuffix]]
+#define defaultCachePath [NSString stringWithFormat:@"%@/default/CacheData", kDocPath]
+
 
 @implementation LXCacheManager
 
@@ -42,8 +44,13 @@ static LXCacheManager *_manager = nil;
 /// 针对字典数据
 - (void)cacheDataDict:(NSDictionary *)dataDict forKey:(NSString *)key
 {
+    [self cacheDataDict:dataDict forKey:key separate:YES];
+}
+
+- (void)cacheDataDict:(NSDictionary *)dataDict forKey:(NSString *)key separate:(BOOL)separate
+{
     NSData *data = [NSJSONSerialization dataWithJSONObject:dataDict options:NSJSONWritingPrettyPrinted error:nil];
-    [self cacheData:data forKey:key];
+    [self cacheData:data forKey:key separate:separate];
 }
 
 
@@ -51,13 +58,19 @@ static LXCacheManager *_manager = nil;
 /// NSData 类型数据
 - (void)cacheData:(NSData *)data forKey:(NSString *)key
 {
+    [self cacheDataDict:data forKey:key separate:YES];
+}
+
+- (void)cacheData:(NSData *)data forKey:(NSString *)key separate:(BOOL)separate
+{
     if (key.length == 0) return;
-    NSString *filePath = [kCachePath stringByAppendingPathComponent:[self md5StringWithString:key]];
+    NSString *basePath = separate ? userCachePath : defaultCachePath;
+    NSString *filePath = [basePath stringByAppendingPathComponent:[self md5StringWithString:key]];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [self storeData:data atFilePath:filePath];
     });
-//    [self storeData:data atFilePath:filePath];
 }
+
 
 
 
@@ -86,13 +99,19 @@ static LXCacheManager *_manager = nil;
 #pragma mark - 删
 - (void)deleteDataForKey:(NSString *)key
 {
+    [self deleteDataForKey:key separate:YES];
+}
+
+- (void)deleteDataForKey:(NSString *)key separate:(BOOL)separate
+{
     if (key.length == 0) return;
-    NSString *filePath = [kCachePath stringByAppendingPathComponent:[self md5StringWithString:key]];
+    NSString *basePath = separate ? userCachePath : defaultCachePath;
+    NSString *filePath = [basePath stringByAppendingPathComponent:[self md5StringWithString:key]];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [self deleteDataAtFilePath:filePath];
     });
-    
 }
+
 
 - (void)deleteDataAtFilePath:(NSString *)filePath
 {
@@ -109,7 +128,12 @@ static LXCacheManager *_manager = nil;
 - (NSDictionary *)getCacheDataDictForKey:(NSString *)key
 {
     
+    return [self getCacheDataDictForKey:key separate:YES];
     
+}
+
+- (NSDictionary *)getCacheDataDictForKey:(NSString *)key separate:(BOOL)separate
+{
     NSData *data = [self getCacheDataForKey:key];
     if (!data) return nil;
     NSDictionary *dataDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
@@ -119,8 +143,13 @@ static LXCacheManager *_manager = nil;
 
 - (NSData *)getCacheDataForKey:(NSString *)key
 {
+    return [self getCacheDataForKey:key separate:YES];
+}
+- (NSData *)getCacheDataForKey:(NSString *)key separate:(BOOL)separate
+{
     if (key.length == 0) return nil;
-    NSString *filePath = [kCachePath stringByAppendingPathComponent:[self md5StringWithString:key]];
+    NSString *basePath = separate ? userCachePath : defaultCachePath;
+    NSString *filePath = [basePath stringByAppendingPathComponent:[self md5StringWithString:key]];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     if ([fileManager fileExistsAtPath:filePath]) {
         //如果缓存数据存在
@@ -129,6 +158,8 @@ static LXCacheManager *_manager = nil;
     
     return nil;
 }
+
+
 
 - (NSString *)md5StringWithString:(NSString *)baseString
 {

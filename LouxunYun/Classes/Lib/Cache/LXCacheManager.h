@@ -27,11 +27,18 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)cacheDataDict:(NSDictionary *)dataDict forKey:(NSString *)key;
 
+/** 是否需要进行用户隔离 */
+- (void)cacheDataDict:(NSDictionary *)dataDict forKey:(NSString *)key separate:(BOOL)separate;
+
 
 /**
  查
  */
 - (NSDictionary *)getCacheDataDictForKey:(NSString *)key;
+
+
+/** 是否需要进行用户隔离 */
+- (NSDictionary *)getCacheDataDictForKey:(NSString *)key separate:(BOOL)separate;
 
 /**
  删
