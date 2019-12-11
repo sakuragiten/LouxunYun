@@ -58,7 +58,7 @@ static LXCacheManager *_manager = nil;
 /// NSData 类型数据
 - (void)cacheData:(NSData *)data forKey:(NSString *)key
 {
-    [self cacheDataDict:data forKey:key separate:YES];
+    [self cacheData:data forKey:key separate:YES];
 }
 
 - (void)cacheData:(NSData *)data forKey:(NSString *)key separate:(BOOL)separate

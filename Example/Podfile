@@ -5,9 +5,26 @@ use_frameworks!
 
 platform :ios, '8.0'
 
+#pre_install do |installer| Pod::Installer::Xcode::TargetValidator.send(:define_method, :verify_no_static_framework_transitive_dependencies) {}
+#
+#end
+
+
 target 'LouxunYun_Example' do
   pod 'LouxunYun', :path => '../'
 
+  
+#  pod 'YYText'
+      
+  #    系统依赖库
+  #    libsqlite3.tbd
+  #    CoreGraphics.framework
+      
+#      pod 'UMCCommon'
+#      pod 'UMCSecurityPlugins'
+#      pod 'UMCCommonLog'
+#      pod 'UMCShare/Social/ReducedWeChat'
+  
   target 'LouxunYun_Tests' do
     inherit! :search_paths
 

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "TestMainViewController.h"
+#import <LouxunYun/LouxunYun.h>
+
 
 @implementation AppDelegate
 
@@ -24,8 +26,14 @@
     [self.window makeKeyAndVisible];
     
     
+    
+
+    
     return YES;
 }
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

@@ -45,6 +45,15 @@ TODO: Add long description of the pod here.
   s.dependency 'QMUIKit/QMUIComponents/QMUIToastView'
   s.dependency 'QMUIKit/QMUIComponents/QMUIModalPresentationViewController'
   s.dependency 'QMUIKit/QMUIComponents/QMUIImagePickerLibrary'
+  
+#  # 友盟基础组件
+#  s.dependency 'UMCCommon'
+#  # debug日志组件
+#  s.dependency 'UMCCommonLog'
+  # 精简版微信
+#  s.dependency 'UMCShare/Social/WeChat'
+  
+
   s.prefix_header_contents = <<-EOS
   #import "YunMacro.h"
   #import "YunHeader.h"

@@ -35,7 +35,8 @@
 #pragma mark - main
 - (void)settingMainDataSource
 {
-    self.dataArray = @[Test(@"Toast", @"LXToastController"),];
+    self.dataArray = @[Test(@"Toast", @"LXToastController"),
+                       Test(@"Share", @"LXShareViewController"),];
 }
 
 
