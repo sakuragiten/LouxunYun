@@ -136,7 +136,9 @@
 
 + (void)showError:(NSString *)text detailText:(NSString *)detailText
 {
-    [LXUITips showError:text detailText:detailText];
+    [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+        [LXUITips showError:text detailText:detailText];
+    }];
 }
 
 
