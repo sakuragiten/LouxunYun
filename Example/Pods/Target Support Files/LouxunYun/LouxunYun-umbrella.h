@@ -18,6 +18,8 @@
 #import "YunHeader.h"
 #import "YunMacro.h"
 #import "LXCacheManager.h"
+#import "CarouselView.h"
+#import "LXPageControl.h"
 #import "LXToast.h"
 #import "LXUITips.h"
 #import "YDUnicode.h"

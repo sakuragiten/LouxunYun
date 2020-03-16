@@ -33,6 +33,7 @@
 {
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.tableView];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 //    [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
 //        make.top.left.right.bottom.mas_equalTo(0);
 //    }];

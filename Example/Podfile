@@ -13,6 +13,7 @@ platform :ios, '8.0'
 target 'LouxunYun_Example' do
   pod 'LouxunYun', :path => '../'
 
+#  pod 'Masonry'
   
 #  pod 'YYText'
       

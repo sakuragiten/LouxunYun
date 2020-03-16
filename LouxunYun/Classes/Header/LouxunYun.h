@@ -14,7 +14,7 @@
 #import "LXToast.h"
 #import "LXCacheManager.h"
 #import "YunConfiguration.h"
-//#import "LXShareManager.h"
+#import "CarouselView.h"
 
 
 #endif /* LouxunYun_h */
