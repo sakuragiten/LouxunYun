@@ -36,7 +36,8 @@
 - (void)settingMainDataSource
 {
     self.dataArray = @[Test(@"Toast", @"LXToastController"),
-                       Test(@"Share", @"LXShareViewController"),];
+                       Test(@"Share", @"LXShareViewController"),
+                       Test(@"Album", @"TestAlbumViewController"),];
 }
 
 
