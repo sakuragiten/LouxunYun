@@ -20,6 +20,7 @@
 		4B155379237C2E5D00767A6C /* LXContactAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B155377237C2E5D00767A6C /* LXContactAlertController.m */; };
 		4BD514F9239DF5350036E6B7 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD514F8239DF5240036E6B7 /* libsqlite3.tbd */; };
 		4BD514FF239E5F1B0036E6B7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD514FE239E5F1B0036E6B7 /* SystemConfiguration.framework */; };
+		4BD941F7241F139A000DEB3D /* TestAlbumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD941F6241F139A000DEB3D /* TestAlbumViewController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -67,6 +68,8 @@
 		4B155377237C2E5D00767A6C /* LXContactAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXContactAlertController.m; sourceTree = "<group>"; };
 		4BD514F8239DF5240036E6B7 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		4BD514FE239E5F1B0036E6B7 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4BD941F5241F139A000DEB3D /* TestAlbumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAlbumViewController.h; sourceTree = "<group>"; };
+		4BD941F6241F139A000DEB3D /* TestAlbumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAlbumViewController.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LouxunYun_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LouxunYun_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -144,6 +147,7 @@
 		4B13D1BE235D829700DE8638 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				4BD941F4241F139A000DEB3D /* Album */,
 				4B0BD3D723C5709A00C49B43 /* Carousel */,
 				4B155374237C2E5D00767A6C /* Alert */,
 				4B13D1DE235D84E300DE8638 /* Toast */,
@@ -237,6 +241,15 @@
 				4B0BD3DB23C575C600C49B43 /* louxun.framework */,
 			);
 			path = Louxun;
+			sourceTree = "<group>";
+		};
+		4BD941F4241F139A000DEB3D /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				4BD941F5241F139A000DEB3D /* TestAlbumViewController.h */,
+				4BD941F6241F139A000DEB3D /* TestAlbumViewController.m */,
+			);
+			path = Album;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
@@ -519,6 +532,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B13D1DB235D829700DE8638 /* TestViewModel.m in Sources */,
+				4BD941F7241F139A000DEB3D /* TestAlbumViewController.m in Sources */,
 				4B13D1E1235D84F800DE8638 /* LXToastController.m in Sources */,
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
 				4B0BD3DA23C570CA00C49B43 /* TesetCarouselController.m in Sources */,

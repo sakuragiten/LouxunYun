@@ -37,7 +37,8 @@
 {
     self.dataArray = @[Test(@"Toast", @"LXToastController"),
                        Test(@"Share", @"LXShareViewController"),
-                       Test(@"Carsouel", @"TesetCarouselController"),];
+                       Test(@"Carsouel", @"TesetCarouselController"),
+                       Test(@"Album", @"TestAlbumViewController"),];
 }
 
 
