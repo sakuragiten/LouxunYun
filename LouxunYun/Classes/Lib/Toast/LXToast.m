@@ -19,12 +19,12 @@
 
 + (void)showLoadingInView:(UIView *)view
 {
-    [self showLoadingWithText:nil inView:view timeInterval:0];
+    [self showLoadingWithText:nil inView:view timeInterval:20];
 }
 
 + (void)showLoadingWithText:(NSString *)text
 {
-    [self showLoadingWithText:text inView:nil timeInterval:0];
+    [self showLoadingWithText:text inView:nil timeInterval:20];
 }
 
 
